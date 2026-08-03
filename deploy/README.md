@@ -10,12 +10,16 @@ EC2 → Launch instance:
 - **AMI**: Ubuntu Server 24.04 LTS
 - **Type**: `t3.small` (t2.micro works but is tight while rendering)
 - **Key pair**: your existing one
-- **Network settings → Edit → Add security group rule**:
-  - SSH, port 22, source *My IP*
-  - Custom TCP, port **8000**, source *Anywhere (0.0.0.0/0)*
+- **Network settings**, the wizard defaults are almost right:
+  - *Allow HTTP traffic from the internet* — **tick this**, it is the one the app
+    needs. The service listens on port 80 so the URL has no port suffix.
+  - *Allow SSH traffic from* — change **Anywhere** to **My IP**. This box holds
+    your API keys, and port 22 open to the world attracts brute-force bots.
+  - *Allow HTTPS* is harmless but unused, since there is no certificate.
 - Launch, then copy the **Public IPv4 address**
 
-Port 8000 must be open to anywhere, or the client cannot reach it.
+To run on 8000 instead, add a Custom TCP rule for it and bootstrap with
+`PORT=8000 bash deploy/bootstrap.sh`.
 
 ## 2. Bootstrap
 
@@ -43,15 +47,15 @@ sudo systemctl restart floorai
 ```bash
 systemctl status floorai
 journalctl -u floorai -f
-curl -s localhost:8000/api/options | head -c 200
+curl -s localhost/api/options | head -c 200
 ```
 
-Then open `http://<public-ip>:8000` in a browser. That is the URL to send.
+Then open `http://<public-ip>` in a browser. That is the URL to send.
 
 Verify it end to end from your own machine:
 
 ```bash
-python api_client.py http://<public-ip>:8000
+python api_client.py http://<public-ip>
 ```
 
 ## Notes

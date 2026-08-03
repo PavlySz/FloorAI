@@ -8,6 +8,10 @@ set -euo pipefail
 
 REPO="${1:-}"
 APP_DIR="$HOME/floorai"
+# Port 80 so the URL has no port suffix, and because the launch wizard's default
+# security group already allows HTTP. Binding below 1024 as a non-root user needs
+# CAP_NET_BIND_SERVICE, granted by the unit below. Override with PORT=8000.
+PORT="${PORT:-80}"
 
 echo "==> packages"
 sudo apt-get update -qq
@@ -48,7 +52,11 @@ Type=simple
 User=$USER
 WorkingDirectory=$APP_DIR
 EnvironmentFile=$APP_DIR/keys.env
-ExecStart=$APP_DIR/.venv/bin/uvicorn app.main:app --host 0.0.0.0 --port 8000
+ExecStart=$APP_DIR/.venv/bin/uvicorn app.main:app --host 0.0.0.0 --port $PORT
+# lets a non-root service bind port 80
+AmbientCapabilities=CAP_NET_BIND_SERVICE
+CapabilityBoundingSet=CAP_NET_BIND_SERVICE
+NoNewPrivileges=true
 Restart=always
 RestartSec=5
 
@@ -62,10 +70,18 @@ sleep 3
 sudo systemctl restart floorai
 sleep 3
 
-IP="$(curl -fsS --max-time 5 http://169.254.169.254/latest/meta-data/public-ipv4 2>/dev/null || echo '<public-ip>')"
+# IMDSv2 needs a token; fall back to v1, then to a placeholder
+TOKEN="$(curl -fsS --max-time 3 -X PUT http://169.254.169.254/latest/api/token \
+  -H 'X-aws-ec2-metadata-token-ttl-seconds: 60' 2>/dev/null || true)"
+IP="$(curl -fsS --max-time 3 -H "X-aws-ec2-metadata-token: $TOKEN" \
+  http://169.254.169.254/latest/meta-data/public-ipv4 2>/dev/null \
+  || curl -fsS --max-time 3 http://169.254.169.254/latest/meta-data/public-ipv4 2>/dev/null \
+  || echo '<public-ip>')"
+
+SUFFIX=""; [ "$PORT" != "80" ] && SUFFIX=":$PORT"
 echo
 if systemctl is-active --quiet floorai; then
-  echo "==> running:  http://$IP:8000"
+  echo "==> running:  http://${IP}${SUFFIX}"
 else
   echo "==> NOT running. Check:  journalctl -u floorai -n 40 --no-pager"
 fi
