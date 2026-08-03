@@ -42,6 +42,8 @@ EXCLUDES=(
   # documentation images the server never serves
   --exclude=experiments
   --exclude=docs
+  # intermediate scrape output; the server only needs catalog/*.json
+  --exclude=scripts/*.json
 )
 
 echo "==> uploading to $USER_AT@$HOST:~/$APP_DIR"
