@@ -53,6 +53,37 @@ Both parallelisable stages are parallel: variations are independent of each
 other, and within a scene every viewpoint depends only on the canonical image.
 Rendering 4 viewpoints drops from about 2 minutes sequential to about 40 seconds.
 
+### Project structure
+
+```
+app/
+  config.py     model ids, paths, keys, generation defaults. Nothing hard-coded elsewhere.
+  llm.py        the only two provider clients: claude() and gemini_image()
+  analyzer.py   stage 1. Floor plan (PNG/JPG/PDF) to structured rooms + geometry validation
+  catalog.py    loads every supplier file, search(), and the per-room subset for the planner
+  planner.py    stage 2. Room + style + catalog to a scene spec. Also amend() for regeneration
+  renderer.py   stage 3. Scene spec to prompt, canonical render, then parallel viewpoints
+  pipeline.py   orchestration: N variations in parallel, and the public response shape
+  main.py       FastAPI routes and static mounts
+
+catalog/        one JSON file per supplier. Adding one is a file copy.
+static/         index.html, style.css, app.js. The whole web interface.
+samples/        the two floor plans from the brief, served to the UI as examples
+scripts/        catalog importers: scrapers, completeness scoring, attribute enrichment
+experiments/    the smoke tests behind the Findings section, with their output images
+deploy/         bootstrap.sh (first install), push.sh (updates), and instructions
+docs/           example-run/ holds a committed generation, images and all
+api_client.py   five-request end-to-end exercise of the API
+```
+
+Data flows one way: `analyzer` output feeds `planner`, whose scene spec feeds
+`renderer`. Only `pipeline` knows about all three, and only `main` knows about
+HTTP, so any stage can be run on its own:
+
+```bash
+python -m app.analyzer samples/plan_1.png
+```
+
 ---
 
 ## Findings
@@ -188,17 +219,10 @@ Interactive docs at `/docs`. The web interface is one static page: plain
 HTML/CSS/JS, no framework, no build step, and it covers all four operations
 including regeneration.
 
-`api_client.py` exercises the API end to end and writes every response and image
-to `api_outputs/`:
-
-```bash
-python api_client.py                        # localhost
-python api_client.py http://<host>:8000     # a deployment
-```
-
-Five requests: options, catalog search, analyse, generate, and a regenerate that
-checks the scene is preserved. About a minute on the fast model. A committed run
-is in [`api_outputs/`](api_outputs/).
+`api_client.py` runs five requests against any instance (options, catalog search,
+analyse, generate, and a regenerate that checks the scene is preserved) and
+writes every response and image to `api_outputs/`, where a committed run already
+sits. About a minute on the fast model.
 
 Measured end to end: one `/api/generate` on the 25.2 m² open-plan room, Japandi
 and earth palette, 4 viewpoints × 2 variations (8 images) on Nano Banana Pro took
@@ -207,18 +231,61 @@ a different pigment, and the rendered wall colour followed it.
 
 ---
 
-## Running it
+## Try it
+
+**Live demo: http://3.141.23.162**
+
+Two example floor plans are built into the page, so no file is needed to start.
+Pick one, press *Analyse plan*, choose a style and palette, then *Generate*. A
+4 viewpoint, 2 variation run takes about 90 seconds on Quality and about 35 on
+Fast. Interactive API docs are at
+[`/docs`](http://3.141.23.162/docs).
+
+It is served over plain HTTP, so browsers will flag it as not secure. It is a
+single EC2 instance behind a systemd unit, no Docker and no managed services.
+
+### Using the API
+
+```bash
+# what the instance supports
+curl http://3.141.23.162/api/options
+
+# search the catalog: sofas under 3000 GEL
+curl "http://3.141.23.162/api/catalog/search?subcategory=sofa&max_price=3000"
+
+# detect rooms in a floor plan
+curl -X POST http://3.141.23.162/api/analyze \
+  -F "file=@samples/plan_1.png"
+
+# generate: 2 designs, 4 viewpoints each
+curl -X POST http://3.141.23.162/api/generate \
+  -F "file=@samples/plan_1.png" \
+  -F "style=japandi" -F "palette=earth" \
+  -F "viewpoints=4" -F "variations=2" -F "quality=quality"
+
+# re-render a stored scene with a change, everything else preserved
+curl -X POST http://3.141.23.162/api/regenerate \
+  -F "scene_id=<from the generate response>" \
+  -F "changes=swap the armchair for a pouf"
+```
+
+Or exercise all of it at once, saving every response and image to
+`api_outputs/`:
+
+```bash
+python api_client.py http://3.141.23.162
+```
+
+### Running locally
 
 ```bash
 pip install -r requirements.txt
 cp keys.env.example keys.env      # ANTHROPIC_API_KEY, GOOGLE_API_KEY
-uvicorn app.main:app --host 0.0.0.0 --port 8000
+uvicorn app.main:app --port 8000
 ```
 
-Open `http://localhost:8000`. Sample floor plans are in [`samples/`](samples/).
-
-Deployment is a single EC2 instance behind a systemd unit, no Docker and no
-managed services. See [`deploy/`](deploy/).
+Then `http://localhost:8000`. Deployment and update instructions are in
+[`deploy/`](deploy/).
 
 ---
 
@@ -241,7 +308,7 @@ is fully covered. Adding bathroom is one line in `WANT` in
 drift and duplication but do not eliminate them. Occasional defects remain, most
 often a piece of furniture changing proportions between views.
 
-Deliberately not built:
+Out of Scope for the Demo (Would be Added in Production):
 
 - **Vector or embedding catalog search.** 49 products fit in a prompt. Semantic
   retrieval only starts paying off at real catalog scale, in the thousands.
