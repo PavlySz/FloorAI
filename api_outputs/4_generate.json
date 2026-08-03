@@ -1,0 +1,192 @@
+{
+ "room": {
+  "id": "room-1",
+  "name": "Living / Kitchen",
+  "type": "living_kitchen",
+  "area_m2": 25.2,
+  "approx_dimensions_m": {
+   "w": 5.5,
+   "l": 4.6
+  }
+ },
+ "style": "scandinavian",
+ "palette": "warm neutral",
+ "image_model": "gemini-2.5-flash-image",
+ "variations": [
+  {
+   "scene_id": "e8ac54ca3301",
+   "variation_index": 0,
+   "summary": "A warm Scandinavian open-plan living and kitchen space with beige and oak tones, featuring comfortable seating, functional dining, and subtle ambient lighting.",
+   "renders": [
+    {
+     "id": "canonical",
+     "label": "Wide establishing view",
+     "url": "/renders/e8ac54ca3301/canonical.png",
+     "is_canonical": true
+    },
+    {
+     "id": "opposite_corner",
+     "label": "Opposite corner",
+     "url": "/renders/e8ac54ca3301/opposite_corner.png",
+     "is_canonical": false
+    }
+   ],
+   "products": [
+    {
+     "catalog_id": "CMF-002",
+     "name": "Moon",
+     "supplier": "Comforter",
+     "qty": 1,
+     "unit_price": 6844.0,
+     "line_total": 6844.0,
+     "currency": "GEL",
+     "url": "https://comforter.ge/en/product/upholstered-furniture/moon/4245",
+     "position": "against the north wall, centred, facing south into the room"
+    },
+    {
+     "catalog_id": "CMF-008",
+     "name": "Patek",
+     "supplier": "Comforter",
+     "qty": 1,
+     "unit_price": 1700.0,
+     "line_total": 1700.0,
+     "currency": "GEL",
+     "url": "https://comforter.ge/en/product/upholstered-furniture/patek/4644",
+     "position": "east side of living area, angled toward the sofa, 50cm from east wall"
+    },
+    {
+     "catalog_id": "CMF-010",
+     "name": "Marsis",
+     "supplier": "Comforter",
+     "qty": 1,
+     "unit_price": 1205.0,
+     "line_total": 1205.0,
+     "currency": "GEL",
+     "url": "https://comforter.ge/en/product/living-room-furniture/marsis/4711",
+     "position": "centred between sofa and armchair, 120cm from north wall"
+    },
+    {
+     "catalog_id": "CMF-021",
+     "name": "Bacardi",
+     "supplier": "Comforter",
+     "qty": 1,
+     "unit_price": 3235.0,
+     "line_total": 3235.0,
+     "currency": "GEL",
+     "url": "https://comforter.ge/en/product/table-chair/bacardi/4919",
+     "position": "in dining zone near kitchen counter, 150cm from south wall, parallel to east-west axis"
+    },
+    {
+     "catalog_id": "CMF-023",
+     "name": "K531",
+     "supplier": "Comforter",
+     "qty": 4,
+     "unit_price": 422.0,
+     "line_total": 1688.0,
+     "currency": "GEL",
+     "url": "https://comforter.ge/en/product/table-chair/k531/4929",
+     "position": "two chairs on each long side of dining table, tucked in"
+    },
+    {
+     "catalog_id": "CMF-012",
+     "name": "Silva",
+     "supplier": "Comforter",
+     "qty": 1,
+     "unit_price": 6652.0,
+     "line_total": 6652.0,
+     "currency": "GEL",
+     "url": "https://comforter.ge/en/product/living-room-furniture/silva/3731",
+     "position": "against the west wall, opposite the sofa, centred"
+    },
+    {
+     "catalog_id": "GRG-009",
+     "name": "Shelf RAF-033-DD-1 (diamond white)",
+     "supplier": "Gorgia",
+     "qty": 2,
+     "unit_price": 56.5,
+     "line_total": 113.0,
+     "currency": "GEL",
+     "url": "https://gorgia.ge/ka/aveji/karadebi-da-taroebi/taro/თარო-raf-033-dd-1-diamond-white/",
+     "position": "mounted on west wall, flanking the wall unit at eye level, 40cm apart vertically"
+    },
+    {
+     "catalog_id": "GRG-013",
+     "name": "Large Pendant Light - White 528090 Tek-is",
+     "supplier": "Gorgia",
+     "qty": 1,
+     "unit_price": 20.8,
+     "line_total": 20.8,
+     "currency": "GEL",
+     "url": "https://gorgia.ge/ka/ganateba/shida-ganateba/cheris-sanati-chagi-sakidi/chagi-didi-tetri-528090-tek-is/",
+     "position": "centred above dining table, 75cm above table surface"
+    },
+    {
+     "catalog_id": "GRG-014",
+     "name": "Wall Sconce SQ0303-0026 White/Round TDM",
+     "supplier": "Gorgia",
+     "qty": 2,
+     "unit_price": 37.3,
+     "line_total": 74.6,
+     "currency": "GEL",
+     "url": "https://gorgia.ge/ka/ganateba/shida-ganateba/kedlis-sanati-bra/sanati-sq0303-0026-tetri-mrgvali-tdm/",
+     "position": "flanking the wall unit on west wall, 160cm from floor, symmetrically placed"
+    }
+   ],
+   "finishes": [
+    {
+     "role": "floor",
+     "catalog_id": "GRG-015",
+     "name": "Laminate Floor 191X1200X10mm AURA SENSE SAFIR Class 32",
+     "unit_price": 33.23,
+     "url": "https://gorgia.ge/ka/remonti/iataki/laminirebuli-iataki/ლამინირებული-იატაკი-191x1200x10მმ-aura-sense-safir-32-კლასი/"
+    },
+    {
+     "role": "walls",
+     "catalog_id": "GRG-020",
+     "name": "Interior water emulsion paint Plus 7.5L white",
+     "unit_price": 103.0,
+     "url": "https://gorgia.ge/ka/remonti/laq-sagebavebi/sagebavi/kedlis-da-cheris-sagebavi/interieris-wyalemulsia-plus-7.5lt-tetri/"
+    }
+   ],
+   "styling_only": [
+    {
+     "item": "area rug",
+     "description": "natural jute flatweave rug, 200x280cm, oatmeal tone with subtle texture",
+     "position": "under coffee table and seating group, centred on living area, extending 30cm beyond furniture edges"
+    },
+    {
+     "item": "throw pillows",
+     "description": "four linen cushions in camel, oatmeal, and cream tones, 50x50cm",
+     "position": "arranged on sofa and armchair"
+    },
+    {
+     "item": "throw blanket",
+     "description": "chunky knit wool throw in warm cream, draped casually over armchair arm",
+     "position": "on Patek armchair"
+    },
+    {
+     "item": "potted plant",
+     "description": "fiddle leaf fig in natural terracotta pot, 110cm tall",
+     "position": "floor beside wall unit on west side, corner placement"
+    },
+    {
+     "item": "tabletop plant",
+     "description": "small succulent arrangement in pale ceramic bowl",
+     "position": "centred on coffee table"
+    },
+    {
+     "item": "table runner",
+     "description": "linen table runner in natural oatmeal, 40x140cm",
+     "position": "running lengthwise down centre of dining table"
+    },
+    {
+     "item": "decorative objects",
+     "description": "ceramic vases and wood bowls in warm neutral tones",
+     "position": "styled on wall unit and floating shelves"
+    }
+   ],
+   "estimated_total": 21668.63,
+   "currency": "GEL"
+  }
+ ]
+}

@@ -1,0 +1,33 @@
+{
+ "base_url": "http://127.0.0.1:8000",
+ "run_at": "2026-08-03 23:59:35",
+ "passed": 5,
+ "total": 5,
+ "results": [
+  {
+   "test": "1_options",
+   "ok": true,
+   "detail": "49 products from Comforter, Gorgia, 12 styles"
+  },
+  {
+   "test": "2_catalog_search",
+   "ok": true,
+   "detail": "sofas under 3000 GEL: 3 -> ['GRG-002 Small Corner Sofa 690.0', 'GRG-003 Corner Sofa with Cushioned B 790.0', 'GRG-001 Chester Corner Sofa 899.0']"
+  },
+  {
+   "test": "3_analyze",
+   "ok": true,
+   "detail": "4 rooms: Living / Kitchen 25.2m2, Bedroom 12.8m2, Bathroom 6.1m2, Balcony 11.8m2"
+  },
+  {
+   "test": "4_generate",
+   "ok": true,
+   "detail": "2 renders, 9 products, 21668.63 GEL, 47s, saved 2 images"
+  },
+  {
+   "test": "5_regenerate",
+   "ok": true,
+   "detail": "scene_id preserved=True, 9 products unchanged, saved 2 images"
+  }
+ ]
+}
