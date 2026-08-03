@@ -58,6 +58,39 @@ Verify it end to end from your own machine:
 python api_client.py http://<public-ip>
 ```
 
+## Updating after a code change
+
+Bootstrap is one-time setup. To ship a change, push the source and restart:
+
+```bash
+bash deploy/push.sh 3.141.23.162 <your-key>.pem
+```
+
+Run this from **Git Bash**, not PowerShell. Windows has two `bash` binaries:
+`C:\Windows\system32\bash.exe` is WSL, which has its own filesystem view and will
+not see your `.pem` at the same path. Git Bash is the one to use. From
+PowerShell, call it explicitly:
+
+```powershell
+& "C:\Program Files\Git\bin\bash.exe" deploy/push.sh 3.141.23.162 key.pem
+```
+
+That uploads the source (about 900 KB), installs anything new in
+`requirements.txt`, restarts the service and reports whether it came back up.
+
+It uses tar over ssh rather than `scp -r`, because `scp` has no exclude support
+and no delta: it would re-upload `.git`, `.history`, the venv and every cached
+render on each run. `rsync` would be the natural tool but is not present in Git
+Bash on Windows. The upload skips local tooling, caches, `docs/`, `experiments/`,
+and the server's own runtime state, since `scenes/` and `static/renders/` belong
+to the instance and must not be overwritten.
+
+It **does** copy `keys.env`, so your local keys become the server's keys. If the
+instance is deliberately running different ones, add `--exclude=keys.env` to the
+list in `push.sh`.
+
+Only re-run `bootstrap.sh` if you change the systemd unit or the port.
+
 ## Notes
 
 - **It is HTTP, not HTTPS.** Fine for a demo, but browsers show "not secure", so

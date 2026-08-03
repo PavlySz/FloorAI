@@ -125,6 +125,128 @@ If time is tight, cut viewpoint count before cutting the planner — the scene s
 
 ---
 
+# Commands
+
+Everything below is run from the repo root. Where it says Git Bash, that matters
+on Windows: `C:\Windows\system32\bash.exe` is WSL and has a different filesystem
+view, so use `C:\Program Files\Git\bin\bash.exe` (right-click the folder, "Git
+Bash Here").
+
+Live instance: **http://3.141.23.162** (EC2 `t3.small`, us-east-2, port 80)
+
+## Local
+
+```bash
+pip install -r requirements.txt
+cp keys.env.example keys.env          # then put the real keys in it
+uvicorn app.main:app --port 8000      # http://localhost:8000
+
+# run a single stage without the server
+python -m app.analyzer samples/plan_1.png
+```
+
+## Testing
+
+```bash
+# five requests end to end, writes responses + images to api_outputs/
+python api_client.py                        # local
+python api_client.py http://3.141.23.162    # the deployment
+```
+
+## First deploy
+
+Security group needs HTTP (port 80) open to anywhere, and SSH restricted to your
+own IP. Then:
+
+```bash
+ssh -i <key>.pem ubuntu@3.141.23.162
+
+# public repo
+curl -fsSL https://raw.githubusercontent.com/<you>/<repo>/main/deploy/bootstrap.sh \
+  | bash -s -- https://github.com/<you>/<repo>.git
+
+# private repo: copy the source up first, then run bootstrap against it
+# (from your machine)  bash deploy/push.sh 3.141.23.162 <key>.pem
+# (on the server)      cd ~/floorai && bash deploy/bootstrap.sh
+```
+
+Bootstrap installs Python, builds the venv, writes the systemd unit and starts
+the service. It grants `CAP_NET_BIND_SERVICE` so a non-root service can bind port
+80. Override with `PORT=8000 bash deploy/bootstrap.sh`.
+
+Then put the real keys on the box:
+
+```bash
+nano ~/floorai/keys.env
+sudo systemctl restart floorai
+```
+
+## Updating a running deployment
+
+Bootstrap is one-time. To ship a change, from Git Bash on your machine:
+
+```bash
+bash deploy/push.sh 3.141.23.162 <key>.pem
+```
+
+Uploads the source (about 900 KB), installs anything new from
+`requirements.txt`, restarts the service and reports whether it came back up.
+Uses tar over ssh rather than `scp -r`, which has no exclude support and no
+delta. Skips `.git`, `.history`, `.claude`, the venv, `docs/`, `experiments/`,
+`api_outputs/`, and the server's own `scenes/` and `static/renders/`.
+
+Re-run `bootstrap.sh` only when the systemd unit or the port changes.
+
+## On the server
+
+```bash
+systemctl status floorai
+journalctl -u floorai -f              # live logs
+journalctl -u floorai -n 50 --no-pager
+sudo systemctl restart floorai
+sudo systemctl stop floorai           # stop serving without terminating the box
+
+curl -s localhost/api/options | head -c 200
+```
+
+## Rebuilding the catalog
+
+Only needed if supplier data changes. Order matters: the scan feeds the rebuild.
+
+```bash
+cd scripts
+python scrape_gorgia2.py        # furniture, lighting, flooring, tile, paint, doors
+python scrape_gorgia3.py        # lighting fixtures and flooring subcategories
+python scrape_gaps.py           # bathroom, kitchen, office, mattress, textile
+python scrape_comforter.py      # all Comforter categories
+
+python scan_complete.py         # score every candidate on data completeness
+python rebuild_gorgia.py ../catalog/gorgia.json
+python harvest_features.py ../catalog/gorgia.json
+python append_paint.py          # wall paint base + tinting pigments
+python append_kitchen.py        # kitchen units, sinks, dining sets
+python colour_from_image.py ../catalog/comforter.json   # colour from product photos
+```
+
+Requires `ANTHROPIC_API_KEY` in the environment, since translation, attribute
+extraction and colour reading all use it.
+
+## Cost and lifecycle notes
+
+- Every render a visitor triggers bills the keys on the instance. A 4 viewpoint,
+  2 variation run is 8 image generations. Set `FLOORAI_IMAGE_QUALITY=fast` in the
+  server's `keys.env` to make the default cheaper and quicker.
+- Stopping the instance releases the auto-assigned public IP, which breaks the
+  URL. Allocate an Elastic IP if the link needs to survive a stop/start. Reboot
+  is safe.
+- `scenes/` and `static/renders/` live only on the instance and are not in the
+  repo.
+
+Note: the Deployment bullets under Tech Stack above describe the original plan
+(port 8000, manual clone). This section reflects what was actually built.
+
+---
+
 # Future Work (explicitly out of scope for MVP)
 - Vector DB / embeddings-based semantic catalog search (only matters at real catalog scale)
 - SQLite/pandas storage layer, formal adapter interface for non-JSON supplier sources

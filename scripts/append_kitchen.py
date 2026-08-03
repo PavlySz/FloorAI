@@ -5,11 +5,12 @@ data is, and only the best-documented ones are kept.
 """
 import json, os, re, urllib.request
 from concurrent.futures import ThreadPoolExecutor
+from pathlib import Path
 
 import requests
 from bs4 import BeautifulSoup
 
-CAT = "d:/upwork_and_other_projects/upwork_floor_ai/assessment/floorai/catalog"
+CAT = str(Path(__file__).resolve().parent.parent / "catalog")
 MODEL = "claude-sonnet-4-5-20250929"
 UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/126.0 Safari/537.36")
@@ -124,8 +125,10 @@ with urllib.request.urlopen(req, timeout=300) as resp:
 meta = {o["idx"]: o for o in json.loads(re.sub(r"^```(?:json)?|```$", "", txt, flags=re.M).strip())}
 
 # ---------- append ----------
-grows = json.load(open(f"{CAT}/gorgia.json", encoding="utf-8"))
-start = max(int(r["id"].split("-")[1]) for r in grows) + 1
+# drop what a previous run added, so re-running does not duplicate the picks
+grows = [r for r in json.load(open(f"{CAT}/gorgia.json", encoding="utf-8"))
+         if r.get("subcategory") not in ("kitchen_unit", "kitchen_sink")]
+start = max((int(r["id"].split("-")[1]) for r in grows), default=0) + 1
 for i, r in enumerate(g_pick):
     m = meta.get(i, {}); f = r["_f"]
     grows.append({
@@ -142,8 +145,9 @@ for i, r in enumerate(g_pick):
     print(f"  + {grows[-1]['id']} {grows[-1]['name'][:46]:48s} {grows[-1]['price']:>8} GEL")
 json.dump(grows, open(f"{CAT}/gorgia.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 
-crows = json.load(open(f"{CAT}/comforter.json", encoding="utf-8"))
-cstart = max(int(r["id"].split("-")[1]) for r in crows) + 1
+crows = [r for r in json.load(open(f"{CAT}/comforter.json", encoding="utf-8"))
+         if r.get("subcategory") not in ("dining_table", "dining_chair")]
+cstart = max((int(r["id"].split("-")[1]) for r in crows), default=0) + 1
 for i, r in enumerate(c_pick):
     m = meta.get(100 + i, {}); s = r["_s"]
     crows.append({

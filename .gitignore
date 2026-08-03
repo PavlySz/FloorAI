@@ -13,4 +13,9 @@ scenes/
 static/renders/
 server.log
 
-*/api_outputs/
+# intermediate scrape output; catalog/*.json is the committed result
+scripts/*.json
+
+# leading slash anchors to the repo root; "*/api_outputs/" only matched one
+# level deep and so never matched the top-level folder
+/api_outputs/

@@ -221,8 +221,9 @@ including regeneration.
 
 `api_client.py` runs five requests against any instance (options, catalog search,
 analyse, generate, and a regenerate that checks the scene is preserved) and
-writes every response and image to `api_outputs/`, where a committed run already
-sits. About a minute on the fast model.
+writes every response and image to a local `api_outputs/` folder. About a minute
+on the fast model. For committed output that needs no keys, see
+[`docs/example-run/`](docs/example-run/).
 
 Measured end to end: one `/api/generate` on the 25.2 m² open-plan room, Japandi
 and earth palette, 4 viewpoints × 2 variations (8 images) on Nano Banana Pro took
