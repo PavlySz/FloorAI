@@ -1,0 +1,724 @@
+[
+ {
+  "id": "CMF-001",
+  "supplier": "Comforter",
+  "name": "Paradiso",
+  "name_original": "Paradiso",
+  "category": "furniture",
+  "subcategory": "sofa",
+  "style_tags": [
+   "luxury",
+   "contemporary"
+  ],
+  "color": "taupe",
+  "material": null,
+  "dimensions_cm": {
+   "w": 195.0,
+   "d": 220.0,
+   "h": 100.0
+  },
+  "price": 15548.0,
+  "currency": "GEL",
+  "url": "https://comforter.ge/en/product/upholstered-furniture/paradiso/2938",
+  "image_url": "https://comforter.ge/uploads/product/66ee89b25f70b.jpg",
+  "source": "scraped",
+  "derived_fields": [
+   "style_tags",
+   "color"
+  ],
+  "dimensions_source": "Country of manufacture:PolandDimensions:Length - 195 cm / depth - 220 cm / height - 100 cmSofa surface material:Fabric",
+  "color_source": "derived from product photograph"
+ },
+ {
+  "id": "CMF-002",
+  "supplier": "Comforter",
+  "name": "Moon",
+  "name_original": "Moon",
+  "category": "furniture",
+  "subcategory": "sofa",
+  "style_tags": [
+   "modern",
+   "contemporary"
+  ],
+  "color": "beige",
+  "material": "Fabric",
+  "dimensions_cm": {
+   "w": 248.0,
+   "d": 111.0,
+   "h": 77.0
+  },
+  "price": 6844.0,
+  "currency": "GEL",
+  "url": "https://comforter.ge/en/product/upholstered-furniture/moon/4245",
+  "image_url": "https://comforter.ge/uploads/product/691440ad18c89.jpg",
+  "source": "scraped",
+  "derived_fields": [
+   "style_tags",
+   "color"
+  ],
+  "dimensions_source": "Country of Manufacture:UkraineDimensions:Length - 248 cm / Depth - 111 cm / Height - 77 cmSofa Surface Material:Fabric",
+  "country_of_manufacture": "UkraineDimensions",
+  "color_source": "derived from product photograph"
+ },
+ {
+  "id": "CMF-003",
+  "supplier": "Comforter",
+  "name": "Santos",
+  "name_original": "Santos",
+  "category": "furniture",
+  "subcategory": "sofa",
+  "style_tags": [
+   "contemporary",
+   "modern"
+  ],
+  "color": "light grey",
+  "material": "Fabric",
+  "dimensions_cm": {
+   "w": 245.0,
+   "d": 100.0,
+   "h": 75.0
+  },
+  "price": 5704.0,
+  "currency": "GEL",
+  "url": "https://comforter.ge/en/product/upholstered-furniture/santos/3821",
+  "image_url": "https://comforter.ge/uploads/product/6883841c50234.jpg",
+  "source": "scraped",
+  "derived_fields": [
+   "style_tags",
+   "color"
+  ],
+  "dimensions_source": "Country of Manufacture:TurkeyDimensions:Length - 245 cm / Depth - 100 cm / Height - 75 cmSofa Surface Material:Fabric",
+  "country_of_manufacture": "TurkeyDimensions",
+  "secondary_color": "warm brown",
+  "color_source": "derived from product photograph"
+ },
+ {
+  "id": "CMF-004",
+  "supplier": "Comforter",
+  "name": "Alpina",
+  "name_original": "Alpina",
+  "category": "furniture",
+  "subcategory": "sofa",
+  "style_tags": [
+   "contemporary",
+   "modern"
+  ],
+  "color": "beige",
+  "material": "Fabric",
+  "dimensions_cm": {
+   "w": 447.0,
+   "d": 317.0,
+   "h": null
+  },
+  "price": 22451.0,
+  "currency": "GEL",
+  "url": "https://comforter.ge/en/product/upholstered-furniture/alpina/4672",
+  "image_url": "https://comforter.ge/uploads/product/69e63c06a775a.jpg",
+  "source": "scraped",
+  "derived_fields": [
+   "style_tags",
+   "color"
+  ],
+  "dimensions_source": "Country of Manufacture:TurkeyDimensions:Length - 447 cm / Depth - 317 cmSofa Surface Material:Fabric",
+  "country_of_manufacture": "TurkeyDimensions",
+  "color_source": "derived from product photograph"
+ },
+ {
+  "id": "CMF-005",
+  "supplier": "Comforter",
+  "name": "Univers",
+  "name_original": "Univers",
+  "category": "furniture",
+  "subcategory": "sofa",
+  "style_tags": [
+   "contemporary",
+   "modern"
+  ],
+  "color": "taupe grey",
+  "material": "Fabric",
+  "dimensions_cm": {
+   "w": 288.0,
+   "d": 166.0,
+   "h": null
+  },
+  "price": 8818.0,
+  "currency": "GEL",
+  "url": "https://comforter.ge/en/product/upholstered-furniture/univers/4813",
+  "image_url": "https://comforter.ge/uploads/product/6a0da3587d61b.jpg",
+  "source": "scraped",
+  "derived_fields": [
+   "style_tags",
+   "color"
+  ],
+  "dimensions_source": "Country of Manufacture:PolandDimensions:Length - 288 cm / Depth - 166 cmSofa Surface Material:Fabric",
+  "country_of_manufacture": "PolandDimensions",
+  "color_source": "derived from product photograph"
+ },
+ {
+  "id": "CMF-006",
+  "supplier": "Comforter",
+  "name": "ALFINOSA",
+  "name_original": "ALFINOSA",
+  "category": "furniture",
+  "subcategory": "armchair",
+  "style_tags": [
+   "contemporary",
+   "modern"
+  ],
+  "color": "dark grey",
+  "material": "FabricMaterial of Armchair Legs",
+  "dimensions_cm": {
+   "w": 120.0,
+   "d": 100.0,
+   "h": 73.0
+  },
+  "price": 4542.0,
+  "currency": "GEL",
+  "url": "https://comforter.ge/en/product/upholstered-furniture/alfinosa/4881",
+  "image_url": "https://comforter.ge/uploads/product/6a2031114e424.jpg",
+  "source": "scraped",
+  "derived_fields": [
+   "style_tags",
+   "color"
+  ],
+  "dimensions_source": "Country of Manufacture:UkraineDimensions:Width - 120 cm / Depth - 100 cm / Height - 73 cm Armchair Surface Material: FabricMaterial of Armchair Legs: Metal",
+  "country_of_manufacture": "UkraineDimensions",
+  "secondary_color": "silver",
+  "color_source": "derived from product photograph"
+ },
+ {
+  "id": "CMF-007",
+  "supplier": "Comforter",
+  "name": "Porto",
+  "name_original": "Porto",
+  "category": "furniture",
+  "subcategory": "armchair",
+  "style_tags": [
+   "contemporary",
+   "modern"
+  ],
+  "color": "beige",
+  "material": "FabricMaterial of Armchair Legs",
+  "dimensions_cm": {
+   "w": 86.0,
+   "d": 88.0,
+   "h": 92.0
+  },
+  "price": 3052.0,
+  "currency": "GEL",
+  "url": "https://comforter.ge/en/product/upholstered-furniture/porto/4195",
+  "image_url": "https://comforter.ge/uploads/product/69049cbcb77fe.jpg",
+  "source": "scraped",
+  "derived_fields": [
+   "style_tags",
+   "color"
+  ],
+  "dimensions_source": "Country of Manufacture:UkraineDimensions: Width - 86 cm / Depth - 88 cm / Height - 92 cm Armchair Surface Material: FabricMaterial of Armchair Legs: Metal",
+  "country_of_manufacture": "UkraineDimensions",
+  "secondary_color": "dark brown",
+  "color_source": "derived from product photograph"
+ },
+ {
+  "id": "CMF-008",
+  "supplier": "Comforter",
+  "name": "Patek",
+  "name_original": "Patek",
+  "category": "furniture",
+  "subcategory": "armchair",
+  "style_tags": [
+   "modern",
+   "minimalist"
+  ],
+  "color": "beige",
+  "material": "FabricMaterial of Armchair Legs",
+  "dimensions_cm": {
+   "w": 80.0,
+   "d": 93.0,
+   "h": 80.0
+  },
+  "price": 1700.0,
+  "currency": "GEL",
+  "url": "https://comforter.ge/en/product/upholstered-furniture/patek/4644",
+  "image_url": "https://comforter.ge/uploads/product/69d603f848957.jpg",
+  "source": "scraped",
+  "derived_fields": [
+   "style_tags",
+   "color"
+  ],
+  "dimensions_source": "Country of Manufacture:TurkeyDimensions:Width - 80 cm / Depth - 93 cm / Height - 80 cm Armchair Surface Material: FabricMaterial of Armchair Legs: Metal",
+  "country_of_manufacture": "TurkeyDimensions",
+  "secondary_color": "black",
+  "color_source": "derived from product photograph"
+ },
+ {
+  "id": "CMF-009",
+  "supplier": "Comforter",
+  "name": "ZO-S4",
+  "name_original": "ZO-S4",
+  "category": "furniture",
+  "subcategory": "coffee_table",
+  "style_tags": [
+   "modern",
+   "contemporary"
+  ],
+  "color": "dark brown",
+  "material": null,
+  "dimensions_cm": {
+   "w": 150.0,
+   "d": 90.0,
+   "h": 76.0
+  },
+  "price": 5006.0,
+  "currency": "GEL",
+  "url": "https://comforter.ge/en/product/living-room-furniture/-zo-s4/4911",
+  "image_url": "https://comforter.ge/uploads/product/6a26a5f9463ac.jpg",
+  "source": "scraped",
+  "derived_fields": [
+   "style_tags",
+   "color"
+  ],
+  "dimensions_source": "Country of Manufacture:PolandDimensions in Open State:Length - 150 cm / Depth - 90 cm / Height - 76 cmDimensions in Expanded State:Length - 200 cm / Depth - 90 ",
+  "country_of_manufacture": "PolandDimensions in Open State",
+  "secondary_color": "black",
+  "color_source": "derived from product photograph"
+ },
+ {
+  "id": "CMF-010",
+  "supplier": "Comforter",
+  "name": "Marsis",
+  "name_original": "Marsis",
+  "category": "furniture",
+  "subcategory": "coffee_table",
+  "style_tags": [
+   "contemporary",
+   "modern"
+  ],
+  "color": "dark brown",
+  "material": "MDFTable Legs Material",
+  "dimensions_cm": {
+   "w": 90.0,
+   "d": 90.0,
+   "h": 47.0
+  },
+  "price": 1205.0,
+  "currency": "GEL",
+  "url": "https://comforter.ge/en/product/living-room-furniture/marsis/4711",
+  "image_url": "https://comforter.ge/uploads/product/69e9f91e81add.jpg",
+  "source": "scraped",
+  "derived_fields": [
+   "style_tags",
+   "color"
+  ],
+  "dimensions_source": "Country of Manufacture:TurkeyDimensions of Table:Length - 90 cm / Depth - 90 cm / Height - 47 cmTable Surface Material:MDFTable Legs Material:MDF",
+  "country_of_manufacture": "TurkeyDimensions of Table",
+  "color_source": "derived from product photograph"
+ },
+ {
+  "id": "CMF-011",
+  "supplier": "Comforter",
+  "name": "NOVA BLACK L104",
+  "name_original": "NOVA BLACK L104",
+  "category": "furniture",
+  "subcategory": "coffee_table",
+  "style_tags": [
+   "modern",
+   "contemporary"
+  ],
+  "color": "black",
+  "material": null,
+  "dimensions_cm": {
+   "w": 104.0,
+   "d": 68.0,
+   "h": 46.0
+  },
+  "price": 1085.0,
+  "currency": "GEL",
+  "url": "https://comforter.ge/en/product/living-room-furniture/nova-black-l104/4796",
+  "image_url": "https://comforter.ge/uploads/product/6a05d911a1185.jpg",
+  "source": "scraped",
+  "derived_fields": [
+   "style_tags"
+  ],
+  "dimensions_source": "Country of Manufacture:PolandDimensions of&nbsp;Commode:Width - 104 cm / Depth - 68 cm / Height - 46 cmFront MaterialMDF (Medium-Density Fiberboard) &mdash; dis",
+  "country_of_manufacture": "PolandDimensions of"
+ },
+ {
+  "id": "CMF-012",
+  "supplier": "Comforter",
+  "name": "Silva",
+  "name_original": "Silva",
+  "category": "furniture",
+  "subcategory": "wall_unit",
+  "style_tags": [
+   "contemporary",
+   "modern"
+  ],
+  "color": "light wood",
+  "material": "MDFMaterial of TV Wall Legs",
+  "dimensions_cm": {
+   "w": 203.0,
+   "d": 50.0,
+   "h": 60.0
+  },
+  "price": 6652.0,
+  "currency": "GEL",
+  "url": "https://comforter.ge/en/product/living-room-furniture/silva/3731",
+  "image_url": "https://comforter.ge/uploads/product/68132d4cb8aff.jpg",
+  "source": "scraped",
+  "derived_fields": [
+   "style_tags",
+   "color"
+  ],
+  "dimensions_source": "Country of Manufacture:TurkeyDimensions:Length - 203 cm / Depth - 50 cm / Height - 60 cmTV Wall Material:MDFMaterial of TV Wall Legs:MDF",
+  "country_of_manufacture": "TurkeyDimensions",
+  "secondary_color": "cream",
+  "color_source": "derived from product photograph"
+ },
+ {
+  "id": "CMF-013",
+  "supplier": "Comforter",
+  "name": "German",
+  "name_original": "German",
+  "category": "furniture",
+  "subcategory": "wall_unit",
+  "style_tags": [
+   "modern",
+   "minimalist"
+  ],
+  "color": "walnut brown",
+  "material": "ChipboardMaterial of TV Wall Legs",
+  "dimensions_cm": {
+   "w": 200.0,
+   "d": 54.0,
+   "h": 60.0
+  },
+  "price": 991.0,
+  "currency": "GEL",
+  "url": "https://comforter.ge/en/product/living-room-furniture/german/4832",
+  "image_url": "https://comforter.ge/uploads/product/6a61e20ea6df1.jpg",
+  "source": "scraped",
+  "derived_fields": [
+   "style_tags",
+   "color"
+  ],
+  "dimensions_source": "Country of Manufacture:&nbsp;Ukraine\r\nDimensions:&nbsp;Length - 200 cm / Depth - 54 cm / Height - 60 cm&nbsp;TV Wall Material:ChipboardMaterial of TV Wall Legs:",
+  "color_source": "derived from product photograph"
+ },
+ {
+  "id": "CMF-014",
+  "supplier": "Comforter",
+  "name": "Point",
+  "name_original": "Point",
+  "category": "furniture",
+  "subcategory": "bookshelf",
+  "style_tags": [
+   "modern",
+   "minimalist"
+  ],
+  "color": "walnut brown",
+  "material": null,
+  "dimensions_cm": {
+   "w": 146.0,
+   "d": 25.0,
+   "h": 175.0
+  },
+  "price": 8032.0,
+  "currency": "GEL",
+  "url": "https://comforter.ge/en/product/living-room-furniture/point/3969",
+  "image_url": "https://comforter.ge/uploads/product/68d3fa2f71d7c.jpg",
+  "source": "scraped",
+  "derived_fields": [
+   "style_tags",
+   "color"
+  ],
+  "dimensions_source": "Country of Manufacture:&nbsp;Turkey&nbsp;&nbsp;Dimensions:Length - 146 cm / Depth - 25 cm / Height - 175 cm&nbsp;&nbsp;Shelf Surface Material:&nbsp;MDFMaterial ",
+  "secondary_color": "black",
+  "color_source": "derived from product photograph"
+ },
+ {
+  "id": "CMF-015",
+  "supplier": "Comforter",
+  "name": "Larex-312",
+  "name_original": "Larex-312",
+  "category": "furniture",
+  "subcategory": "bookshelf",
+  "style_tags": [
+   "contemporary",
+   "modern"
+  ],
+  "color": "walnut brown",
+  "material": null,
+  "dimensions_cm": {
+   "w": 110.0,
+   "d": 35.0,
+   "h": 182.0
+  },
+  "price": 2165.0,
+  "currency": "GEL",
+  "url": "https://comforter.ge/en/product/living-room-furniture/larex-312/3945",
+  "image_url": "https://comforter.ge/uploads/product/68d527331a716.jpg",
+  "source": "scraped",
+  "derived_fields": [
+   "style_tags",
+   "color"
+  ],
+  "dimensions_source": "Country of Manufacture:&nbsp;Turkey&nbsp;&nbsp;Dimensions:Length - 110 cm / Depth - 35 cm / Height - 182 cm&nbsp;&nbsp;Shelf Surface Material:&nbsp;MDFMaterial ",
+  "secondary_color": "black",
+  "color_source": "derived from product photograph"
+ },
+ {
+  "id": "CMF-016",
+  "supplier": "Comforter",
+  "name": "Legato",
+  "name_original": "Legato",
+  "category": "furniture",
+  "subcategory": "console",
+  "style_tags": [
+   "contemporary",
+   "luxury"
+  ],
+  "color": "walnut brown",
+  "material": "MDFMaterial of Console Legs",
+  "dimensions_cm": {
+   "w": 240.0,
+   "d": 50.0,
+   "h": 76.0
+  },
+  "price": 8110.0,
+  "currency": "GEL",
+  "url": "https://comforter.ge/en/product/living-room-furniture/legato/3534",
+  "image_url": "https://comforter.ge/uploads/product/67b43c7e4a945.jpg",
+  "source": "scraped",
+  "derived_fields": [
+   "style_tags",
+   "color"
+  ],
+  "dimensions_source": "Country of manufacture:&nbsp;Turkey&nbsp;\r\nDimensions:Length - 240 cm / Depth - 50 cm / Height - 76 cm&nbsp;Console Material:MDFMaterial of Console Legs:Metal",
+  "secondary_color": "cream",
+  "color_source": "derived from product photograph"
+ },
+ {
+  "id": "CMF-017",
+  "supplier": "Comforter",
+  "name": "ZOOM-KB",
+  "name_original": "ZOOM-KB",
+  "category": "furniture",
+  "subcategory": "showcase",
+  "style_tags": [
+   "modern",
+   "contemporary"
+  ],
+  "color": "walnut brown",
+  "material": "Natural Venner / LaminateMaterial of",
+  "dimensions_cm": {
+   "w": 112.0,
+   "d": 43.0,
+   "h": 140.0
+  },
+  "price": 6461.0,
+  "currency": "GEL",
+  "url": "https://comforter.ge/en/product/living-room-furniture/zoom-kb/4901",
+  "image_url": "https://comforter.ge/uploads/product/6a26a234ad0d5.jpg",
+  "source": "scraped",
+  "derived_fields": [
+   "style_tags",
+   "color"
+  ],
+  "dimensions_source": "Country of Manufacture:PolandDimensions:Length - 112 cm / Depth - 43 cm / Height - 140 cmShowcase&nbsp;Material:Natural Venner / LaminateMaterial of&nbsp;Showca",
+  "country_of_manufacture": "PolandDimensions",
+  "secondary_color": "cream",
+  "color_source": "derived from product photograph"
+ },
+ {
+  "id": "CMF-018",
+  "supplier": "Comforter",
+  "name": "Wersal-TL",
+  "name_original": "Wersal-TL",
+  "category": "decor",
+  "subcategory": "mirror",
+  "style_tags": [
+   "classic",
+   "luxury"
+  ],
+  "color": "dark brown",
+  "material": "Laminate",
+  "dimensions_cm": {
+   "w": 114.0,
+   "d": 55.0,
+   "h": 92.0
+  },
+  "price": 3197.0,
+  "currency": "GEL",
+  "url": "https://comforter.ge/en/product/living-room-furniture/wersal-tl/4789",
+  "image_url": "https://comforter.ge/uploads/product/6a043c4f2eb9e.jpg",
+  "source": "scraped",
+  "derived_fields": [
+   "style_tags",
+   "color"
+  ],
+  "dimensions_source": "Country of Manufacture:PolandDimensions:Length - 114 cm / Depth - 55 cm / Height - 92 cmMirror Material:Laminate",
+  "country_of_manufacture": "PolandDimensions",
+  "color_source": "derived from product photograph"
+ },
+ {
+  "id": "CMF-019",
+  "supplier": "Comforter",
+  "name": "Wersal-K2sz",
+  "name_original": "Wersal-K2sz",
+  "category": "furniture",
+  "subcategory": "commode",
+  "style_tags": [
+   "classic",
+   "luxury"
+  ],
+  "color": "dark brown",
+  "material": "WoodMaterial of Console Legs",
+  "dimensions_cm": {
+   "w": 135.0,
+   "d": 42.0,
+   "h": 86.0
+  },
+  "price": 7674.0,
+  "currency": "GEL",
+  "url": "https://comforter.ge/en/product/bedroom-furniture/wersal-k2sz/4784",
+  "image_url": "https://comforter.ge/uploads/product/6a043156ea81c.jpg",
+  "source": "scraped",
+  "derived_fields": [
+   "style_tags",
+   "color"
+  ],
+  "dimensions_source": "Country of Manufacture:PolandDimensions:Length - 135 cm / Depth - 42 cm / Height - 86 cmConsole Material:WoodMaterial of Console Legs:Wood",
+  "country_of_manufacture": "PolandDimensions",
+  "color_source": "derived from product photograph"
+ },
+ {
+  "id": "CMF-020",
+  "supplier": "Comforter",
+  "name": "Wersal-Loze",
+  "name_original": "Wersal-Loze",
+  "category": "furniture",
+  "subcategory": "bed",
+  "style_tags": [
+   "classic",
+   "luxury"
+  ],
+  "color": "white",
+  "material": null,
+  "dimensions_cm": {
+   "w": 174.0,
+   "d": 232.0,
+   "h": 131.0
+  },
+  "price": 10022.0,
+  "currency": "GEL",
+  "url": "https://comforter.ge/en/product/bedroom-furniture/wersal-loze/4790",
+  "image_url": "https://comforter.ge/uploads/product/6a0454735a454.jpg",
+  "source": "scraped",
+  "derived_fields": [
+   "style_tags",
+   "color"
+  ],
+  "dimensions_source": "Country of Manufacture:PolandBed Frame Dimensions:Length - 174 cm / Depth - 232 cm / Height - 131 cmBed Mattress Dimensions:Length - 160 cm / Depth - 200 cm&nbs",
+  "country_of_manufacture": "PolandBed Frame Dimensions",
+  "secondary_color": "dark brown",
+  "color_source": "derived from product photograph"
+ },
+ {
+  "id": "CMF-021",
+  "supplier": "Comforter",
+  "name": "Bacardi",
+  "name_original": "Bacardi",
+  "category": "furniture",
+  "subcategory": "dining_table",
+  "style_tags": [
+   "modern",
+   "contemporary"
+  ],
+  "color": "dark grey",
+  "material": null,
+  "dimensions_cm": {
+   "w": 160.0,
+   "d": 90.0,
+   "h": 75.0
+  },
+  "dimensions_source": "meta description",
+  "brand": null,
+  "country_of_manufacture": "PolandDimensions in Open State",
+  "price": 3235.0,
+  "currency": "GEL",
+  "url": "https://comforter.ge/en/product/table-chair/bacardi/4919",
+  "image_url": "https://comforter.ge/uploads/product/6a281b9b7b51a.jpg",
+  "source": "scraped",
+  "derived_fields": [
+   "style_tags",
+   "color"
+  ],
+  "color_source": "derived from product photograph"
+ },
+ {
+  "id": "CMF-022",
+  "supplier": "Comforter",
+  "name": "K533",
+  "name_original": "K533",
+  "category": "furniture",
+  "subcategory": "dining_chair",
+  "style_tags": [
+   "contemporary",
+   "modern"
+  ],
+  "color": "olive green",
+  "material": "fabric",
+  "dimensions_cm": {
+   "w": 57.0,
+   "d": 60.0,
+   "h": 80.0
+  },
+  "dimensions_source": "meta description",
+  "brand": null,
+  "country_of_manufacture": "PolandDimensions",
+  "price": 517.0,
+  "currency": "GEL",
+  "url": "https://comforter.ge/en/product/table-chair/k533/4930",
+  "image_url": "https://comforter.ge/uploads/product/6a2964908fdaa.jpg",
+  "source": "scraped",
+  "derived_fields": [
+   "style_tags",
+   "color"
+  ],
+  "secondary_color": "black",
+  "color_source": "derived from product photograph"
+ },
+ {
+  "id": "CMF-023",
+  "supplier": "Comforter",
+  "name": "K531",
+  "name_original": "K531",
+  "category": "furniture",
+  "subcategory": "dining_chair",
+  "style_tags": [
+   "contemporary",
+   "modern"
+  ],
+  "color": "beige",
+  "material": "fabric",
+  "dimensions_cm": {
+   "w": 60.0,
+   "d": 58.0,
+   "h": 76.0
+  },
+  "dimensions_source": "meta description",
+  "brand": null,
+  "country_of_manufacture": "PolandDimensions",
+  "price": 422.0,
+  "currency": "GEL",
+  "url": "https://comforter.ge/en/product/table-chair/k531/4929",
+  "image_url": "https://comforter.ge/uploads/product/6a2961081a25a.jpg",
+  "source": "scraped",
+  "derived_fields": [
+   "style_tags",
+   "color"
+  ],
+  "secondary_color": "black",
+  "color_source": "derived from product photograph"
+ }
+]

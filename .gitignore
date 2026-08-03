@@ -1,0 +1,15 @@
+keys.env
+.env
+**/**__pycache__/
+*.pyc
+venv/
+.venv/
+.claude/
+.history/
+floorai/
+
+# generated at runtime
+scenes/
+static/renders/
+server.log
+

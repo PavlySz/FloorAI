@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FloorAI — floor plan to interior renders</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<header>
+  <h1>FloorAI</h1>
+  <p>Upload a floor plan. Get photorealistic renders furnished entirely from real supplier catalogs.</p>
+</header>
+
+<main>
+  <section class="panel">
+    <h2>1 · Floor plan</h2>
+
+    <div class="samples">
+      <button type="button" class="sample" data-plan="/samples/plan_1.png" aria-pressed="false">
+        <img src="/samples/plan_1.png" alt="">
+        <span>Example 1<small>Open-plan studio · 4 rooms</small></span>
+      </button>
+      <button type="button" class="sample" data-plan="/samples/plan_2.png" aria-pressed="false">
+        <img src="/samples/plan_2.png" alt="">
+        <span>Example 2<small>One-bed flat · 51 m²</small></span>
+      </button>
+    </div>
+
+    <p class="or">or upload your own</p>
+    <input type="file" id="file" accept=".png,.jpg,.jpeg,.pdf">
+
+    <div class="actions">
+      <button id="analyze">Analyse plan</button>
+    </div>
+    <div id="analysis" class="out"></div>
+  </section>
+
+  <section class="panel" id="step2" hidden>
+    <h2>2 · Design</h2>
+    <div class="grid">
+      <label>Room <select id="room"></select></label>
+      <label>Style <select id="style"></select></label>
+      <label>Palette <select id="palette"></select></label>
+      <label>Viewpoints <select id="viewpoints"></select></label>
+      <label>Variations <select id="variations"></select></label>
+      <label>Render quality
+        <select id="quality">
+          <option value="quality">Quality · slower, photoreal</option>
+          <option value="fast">Fast · quicker, flatter</option>
+        </select>
+      </label>
+    </div>
+    <div class="actions">
+      <button id="generate">Generate</button>
+    </div>
+    <p class="hint" id="hint"></p>
+  </section>
+
+  <section id="results"></section>
+</main>
+
+<footer>
+  <span id="catmeta"></span>
+  <a href="/docs">API docs</a>
+</footer>
+
+<script src="/static/app.js"></script>
+</body>
+</html>

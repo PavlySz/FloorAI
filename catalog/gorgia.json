@@ -1,0 +1,778 @@
+[
+ {
+  "id": "GRG-001",
+  "supplier": "Gorgia",
+  "name": "Chester Corner Sofa",
+  "name_original": "კუთხის დივანი ჩესტერის",
+  "category": "furniture",
+  "subcategory": "sofa",
+  "style_tags": [
+   "classic",
+   "luxury"
+  ],
+  "color": "Custom color",
+  "material": "Wood, MDF",
+  "dimensions_cm": {
+   "w": 225.0,
+   "d": 165.0,
+   "h": 90.0
+  },
+  "dimensions_source": "feature table (validated)",
+  "brand": null,
+  "country_of_manufacture": "საქართველო",
+  "price": 899.0,
+  "currency": "GEL",
+  "url": "https://gorgia.ge/ka/aveji/rbili-aveji/divnebi/kutxis-divani/კუთხის-დივანი-ჩესტერის/",
+  "image_url": "https://gorgia.ge/images/thumbnails/176/176/detailed/68/BM-00157262.jpg",
+  "source": "scraped",
+  "derived_fields": [
+   "style_tags"
+  ]
+ },
+ {
+  "id": "GRG-002",
+  "supplier": "Gorgia",
+  "name": "Small Corner Sofa",
+  "name_original": "კუთხის დივანი პატარა",
+  "category": "furniture",
+  "subcategory": "sofa",
+  "style_tags": [
+   "contemporary",
+   "minimalist"
+  ],
+  "color": "Custom color",
+  "material": "Wood, MDF",
+  "dimensions_cm": {
+   "w": 205.0,
+   "d": 183.0,
+   "h": 90.0
+  },
+  "dimensions_source": "feature table (validated)",
+  "brand": null,
+  "country_of_manufacture": "საქართველო",
+  "price": 690.0,
+  "currency": "GEL",
+  "url": "https://gorgia.ge/ka/aveji/rbili-aveji/divnebi/kutxis-divani/კუთხის-დივანი-პატარა/",
+  "image_url": "https://gorgia.ge/images/thumbnails/176/176/detailed/68/BM-00157218.jpg",
+  "source": "scraped",
+  "derived_fields": [
+   "style_tags"
+  ]
+ },
+ {
+  "id": "GRG-003",
+  "supplier": "Gorgia",
+  "name": "Corner Sofa with Cushioned Backrest",
+  "name_original": "კუთხის დივანი დაზოლილი საზურგით",
+  "category": "furniture",
+  "subcategory": "sofa",
+  "style_tags": [
+   "contemporary",
+   "modern"
+  ],
+  "color": "Custom color",
+  "material": "Wood, MDF",
+  "dimensions_cm": {
+   "w": 225.0,
+   "d": 165.0,
+   "h": 90.0
+  },
+  "dimensions_source": "feature table (validated)",
+  "brand": null,
+  "country_of_manufacture": "საქართველო",
+  "price": 790.0,
+  "currency": "GEL",
+  "url": "https://gorgia.ge/ka/aveji/rbili-aveji/divnebi/kutxis-divani/კუთხის-დივანი-დაზოლილი-საზურგით/",
+  "image_url": "https://gorgia.ge/images/thumbnails/176/176/detailed/48/BM-00157269_-_sofa.jpg",
+  "source": "scraped",
+  "derived_fields": [
+   "style_tags"
+  ]
+ },
+ {
+  "id": "GRG-004",
+  "supplier": "Gorgia",
+  "name": "Dona Armchair - Black",
+  "name_original": "სკამი \"დონა\" - შავი",
+  "category": "furniture",
+  "subcategory": "armchair",
+  "style_tags": [
+   "modern",
+   "industrial"
+  ],
+  "color": "Black",
+  "material": "Metal, Foam, PU Leather",
+  "dimensions_cm": {
+   "w": 70.0,
+   "d": 105.0,
+   "h": 110.0
+  },
+  "dimensions_source": "feature table (validated)",
+  "brand": null,
+  "country_of_manufacture": null,
+  "price": 73.0,
+  "currency": "GEL",
+  "url": "https://gorgia.ge/ka/aveji/skamebi/misagebi-otaxis-skami/skami-dona-shavi/",
+  "image_url": "https://gorgia.ge/images/thumbnails/176/176/detailed/75/BM-00013290.jpg",
+  "source": "scraped",
+  "derived_fields": [
+   "style_tags"
+  ]
+ },
+ {
+  "id": "GRG-005",
+  "supplier": "Gorgia",
+  "name": "Reception Chair XS-2782 (UF970-11) Gray",
+  "name_original": "სკამი მისაღების XS-2782 (UF970-11) ნაცრისფერი",
+  "category": "furniture",
+  "subcategory": "armchair",
+  "style_tags": [
+   "contemporary",
+   "modern"
+  ],
+  "color": null,
+  "material": null,
+  "dimensions_cm": {
+   "w": 45.0,
+   "d": 44.0,
+   "h": 86.0
+  },
+  "dimensions_source": "feature table (validated)",
+  "brand": "XS FURNITURE",
+  "country_of_manufacture": "CHINA",
+  "price": 146.0,
+  "currency": "GEL",
+  "url": "https://gorgia.ge/ka/aveji/skamebi/misagebi-otaxis-skami/სკამი-მისაღების-xs-2782-uf970-11-ნაცრისფერი/",
+  "image_url": "https://gorgia.ge/images/thumbnails/176/176/detailed/54/BM-00169435-პირველ-ფოტოდ-ავტვირთოთ.jpg",
+  "source": "scraped",
+  "derived_fields": [
+   "style_tags"
+  ]
+ },
+ {
+  "id": "GRG-006",
+  "supplier": "Gorgia",
+  "name": "Alcantara Pouf 34/34/40 Purple 310",
+  "name_original": "პუფი ალკანტარა 34/34/40 სტაფილოსფერი 310",
+  "category": "furniture",
+  "subcategory": "pouf",
+  "style_tags": [
+   "contemporary",
+   "luxury"
+  ],
+  "color": "Purple",
+  "material": "Chipboard, Foam, Alcantara",
+  "dimensions_cm": {
+   "w": 34.0,
+   "d": 34.0,
+   "h": 40.0
+  },
+  "dimensions_source": "feature table (validated)",
+  "brand": null,
+  "country_of_manufacture": "საქართველო",
+  "price": 40.0,
+  "currency": "GEL",
+  "url": "https://gorgia.ge/ka/aveji/rbili-aveji/pufebi/myari-pufi/pufi-alkantara-34-34-40-stafilosferi-310/",
+  "image_url": "https://gorgia.ge/images/thumbnails/176/176/detailed/74/BM-00098685.jpg",
+  "source": "scraped",
+  "derived_fields": [
+   "style_tags"
+  ]
+ },
+ {
+  "id": "GRG-007",
+  "supplier": "Gorgia",
+  "name": "Coffee Table 3pcs, 40x40x44cm, Black, Silver Legs",
+  "name_original": "ყავის მაგიდა 3ც., 40*40*44სმ, შავი, ვერცხლისფერი ფეხი",
+  "category": "furniture",
+  "subcategory": "coffee_table",
+  "style_tags": [
+   "modern",
+   "contemporary"
+  ],
+  "color": "Silver, Black",
+  "material": null,
+  "dimensions_cm": {
+   "w": 40.0,
+   "d": 40.0,
+   "h": 82.0
+  },
+  "dimensions_source": "feature table (validated)",
+  "brand": "SUNNY WOOD",
+  "country_of_manufacture": "CHINA",
+  "price": 188.0,
+  "currency": "GEL",
+  "url": "https://gorgia.ge/ka/aveji/magidebi-da-merxebi/yavis-magida/yavis-magida-3ts.-404044sm-shavi-verts.xlisperi-pexi/",
+  "image_url": "https://gorgia.ge/images/thumbnails/176/176/detailed/51/BM-00124425_-_coffee_table.jpg",
+  "source": "scraped",
+  "derived_fields": [
+   "style_tags"
+  ]
+ },
+ {
+  "id": "GRG-008",
+  "supplier": "Gorgia",
+  "name": "Coffee Table 3pcs, 40x40x44cm, Black, Black Legs",
+  "name_original": "ყავის მაგიდა 3ც, 40x40x44cm, შავი, შავი ფეხი",
+  "category": "furniture",
+  "subcategory": "coffee_table",
+  "style_tags": [
+   "modern",
+   "minimalist"
+  ],
+  "color": "Black",
+  "material": null,
+  "dimensions_cm": {
+   "w": 40.0,
+   "d": 40.0,
+   "h": 82.0
+  },
+  "dimensions_source": "feature table (validated)",
+  "brand": "SUNNY WOOD",
+  "country_of_manufacture": "CHINA",
+  "price": 174.0,
+  "currency": "GEL",
+  "url": "https://gorgia.ge/ka/aveji/magidebi-da-merxebi/yavis-magida/yavis-magida-3ts-40x40x44cm-shavi-shavi-pexi/",
+  "image_url": "https://gorgia.ge/images/thumbnails/176/176/detailed/51/BM-00124426.jpg",
+  "source": "scraped",
+  "derived_fields": [
+   "style_tags"
+  ]
+ },
+ {
+  "id": "GRG-009",
+  "supplier": "Gorgia",
+  "name": "Shelf RAF-033-DD-1 (diamond white)",
+  "name_original": "თარო RAF-033-DD-1 (diamond white)",
+  "category": "furniture",
+  "subcategory": "shelf",
+  "style_tags": [
+   "scandinavian",
+   "minimalist"
+  ],
+  "color": "White",
+  "material": "White",
+  "dimensions_cm": {
+   "w": 33.0,
+   "d": 33.0,
+   "h": 19.0
+  },
+  "dimensions_source": "feature table (validated)",
+  "brand": "ADORE",
+  "country_of_manufacture": "Turkey",
+  "price": 56.5,
+  "currency": "GEL",
+  "url": "https://gorgia.ge/ka/aveji/karadebi-da-taroebi/taro/თარო-raf-033-dd-1-diamond-white/",
+  "image_url": "https://gorgia.ge/images/thumbnails/176/176/detailed/57/BM-00086984_shelf.jpg",
+  "source": "scraped",
+  "derived_fields": [
+   "style_tags"
+  ]
+ },
+ {
+  "id": "GRG-010",
+  "supplier": "Gorgia",
+  "name": "Shelf RAF-033-OO-1 (oak-walnut)",
+  "name_original": "თარო RAF-033-OO-1 (oak-walnut)",
+  "category": "furniture",
+  "subcategory": "shelf",
+  "style_tags": [
+   "scandinavian",
+   "modern"
+  ],
+  "color": "Walnut",
+  "material": "Walnut",
+  "dimensions_cm": {
+   "w": 33.0,
+   "d": 33.0,
+   "h": 19.0
+  },
+  "dimensions_source": "feature table (validated)",
+  "brand": "ADORE",
+  "country_of_manufacture": "Turkey",
+  "price": 56.5,
+  "currency": "GEL",
+  "url": "https://gorgia.ge/ka/aveji/karadebi-da-taroebi/taro/თარო-raf-033-oo-1-oak-walnut/",
+  "image_url": "https://gorgia.ge/images/thumbnails/176/176/detailed/51/BM-00086988_-_shelf.jpg",
+  "source": "scraped",
+  "derived_fields": [
+   "style_tags"
+  ]
+ },
+ {
+  "id": "GRG-011",
+  "supplier": "Gorgia",
+  "name": "Commode SFN-604-BB-1",
+  "name_original": "კომოდი SFN-604-BB-1",
+  "category": "furniture",
+  "subcategory": "commode",
+  "style_tags": [
+   "scandinavian",
+   "modern"
+  ],
+  "color": "White, Sonoma",
+  "material": null,
+  "dimensions_cm": {
+   "w": 65.0,
+   "d": 78.0,
+   "h": 41.0
+  },
+  "dimensions_source": "feature table (validated)",
+  "brand": "ADORE",
+  "country_of_manufacture": "Turkey",
+  "price": 337.0,
+  "currency": "GEL",
+  "url": "https://gorgia.ge/ka/aveji/komodi-da-tumbo/komodi/კომოდი-sfn-604-bb-1/",
+  "image_url": "https://gorgia.ge/images/thumbnails/176/176/detailed/75/BM-00137237-_1_.jpg",
+  "source": "scraped",
+  "derived_fields": [
+   "style_tags"
+  ]
+ },
+ {
+  "id": "GRG-012",
+  "supplier": "Gorgia",
+  "name": "Wardrobe GRD-631-BB-2",
+  "name_original": "კარადა GRD-631-BB-2",
+  "category": "furniture",
+  "subcategory": "wardrobe",
+  "style_tags": [
+   "minimalist",
+   "contemporary"
+  ],
+  "color": "White",
+  "material": "E1 Class Melamine",
+  "dimensions_cm": {
+   "w": 103.0,
+   "d": 52.0,
+   "h": 187.0
+  },
+  "dimensions_source": "feature table (validated)",
+  "brand": "ADORE",
+  "country_of_manufacture": "Turkey",
+  "price": 749.0,
+  "currency": "GEL",
+  "url": "https://gorgia.ge/ka/aveji/karadebi-da-taroebi/tansacmlis-karada/კარადა-grd-631-bb-2/",
+  "image_url": "https://gorgia.ge/images/thumbnails/176/176/detailed/53/BM-00146724_-_Closet.jpg",
+  "source": "scraped",
+  "derived_fields": [
+   "style_tags"
+  ]
+ },
+ {
+  "id": "GRG-013",
+  "supplier": "Gorgia",
+  "name": "Large Pendant Light - White 528090 Tek-is",
+  "name_original": "ჭაღი დიდი - თეთრი 528090 Tek-is",
+  "category": "lighting",
+  "subcategory": "pendant_light",
+  "style_tags": [
+   "modern",
+   "minimalist"
+  ],
+  "color": null,
+  "material": "Plastic",
+  "dimensions_cm": {
+   "w": 28.0,
+   "d": 28.0,
+   "h": 28.0
+  },
+  "dimensions_source": "feature table (validated)",
+  "brand": "TEK-IS",
+  "country_of_manufacture": "Turkey",
+  "price": 20.8,
+  "currency": "GEL",
+  "url": "https://gorgia.ge/ka/ganateba/shida-ganateba/cheris-sanati-chagi-sakidi/chagi-didi-tetri-528090-tek-is/",
+  "image_url": "https://gorgia.ge/images/thumbnails/176/176/detailed/51/BM-00060468_-_chandelier.jpg",
+  "source": "scraped",
+  "derived_fields": [
+   "style_tags"
+  ]
+ },
+ {
+  "id": "GRG-014",
+  "supplier": "Gorgia",
+  "name": "Wall Sconce SQ0303-0026 White/Round TDM",
+  "name_original": "სანათი SQ0303-0026 თეთრი/მრგვალი TDM",
+  "category": "lighting",
+  "subcategory": "wall_sconce",
+  "style_tags": [
+   "modern",
+   "minimalist"
+  ],
+  "color": null,
+  "material": "Glass",
+  "dimensions_cm": {
+   "w": 30.0,
+   "d": 20.0,
+   "h": 10.0
+  },
+  "dimensions_source": "feature table (validated)",
+  "brand": "TDM",
+  "country_of_manufacture": "რუსეთი",
+  "price": 37.3,
+  "currency": "GEL",
+  "url": "https://gorgia.ge/ka/ganateba/shida-ganateba/kedlis-sanati-bra/sanati-sq0303-0026-tetri-mrgvali-tdm/",
+  "image_url": "https://gorgia.ge/images/thumbnails/176/176/detailed/51/BM-00025553_-_lamp.jpg",
+  "source": "scraped",
+  "derived_fields": [
+   "style_tags"
+  ]
+ },
+ {
+  "id": "GRG-015",
+  "supplier": "Gorgia",
+  "name": "Laminate Floor 191X1200X10mm AURA SENSE SAFIR Class 32",
+  "name_original": "ლამინირებული იატაკი 191X1200X10მმ AURA SENSE SAFIR 32 კლასი",
+  "category": "flooring",
+  "subcategory": "laminate_floor",
+  "style_tags": [
+   "contemporary",
+   "modern"
+  ],
+  "color": null,
+  "material": null,
+  "dimensions_cm": {
+   "w": 120.0,
+   "d": 19.1,
+   "h": 1.0
+  },
+  "dimensions_source": "feature table (validated)",
+  "brand": "CAMSAN",
+  "country_of_manufacture": "Turkey",
+  "price": 33.23,
+  "currency": "GEL",
+  "url": "https://gorgia.ge/ka/remonti/iataki/laminirebuli-iataki/ლამინირებული-იატაკი-191x1200x10მმ-aura-sense-safir-32-კლასი/",
+  "image_url": "https://gorgia.ge/images/thumbnails/176/176/detailed/77/BM-00222752-BM-00223036.jpg",
+  "source": "scraped",
+  "derived_fields": [
+   "style_tags"
+  ]
+ },
+ {
+  "id": "GRG-016",
+  "supplier": "Gorgia",
+  "name": "Laminate Floor 191X1200X10mm AURA SENSE LAL Class 32",
+  "name_original": "ლამინირებული იატაკი 191X1200X10მმ AURA SENSE LAL 32 კლასი",
+  "category": "flooring",
+  "subcategory": "laminate_floor",
+  "style_tags": [
+   "contemporary",
+   "modern"
+  ],
+  "color": null,
+  "material": null,
+  "dimensions_cm": {
+   "w": 120.0,
+   "d": 19.1,
+   "h": 1.0
+  },
+  "dimensions_source": "feature table (validated)",
+  "brand": "CAMSAN",
+  "country_of_manufacture": "Turkey",
+  "price": 33.23,
+  "currency": "GEL",
+  "url": "https://gorgia.ge/ka/remonti/iataki/laminirebuli-iataki/ლამინირებული-იატაკი-191x1200x10მმ-aura-sense-lal-32-კლასი/",
+  "image_url": "https://gorgia.ge/images/thumbnails/176/176/detailed/77/BM-00223038-BM-00223039_ygc9-zk.jpg",
+  "source": "scraped",
+  "derived_fields": [
+   "style_tags"
+  ]
+ },
+ {
+  "id": "GRG-017",
+  "supplier": "Gorgia",
+  "name": "Porcelain Tile Mineral Colormix 60*60",
+  "name_original": "კერამოგრანიტი Mineral Colormix 60*60",
+  "category": "flooring",
+  "subcategory": "floor_tile",
+  "style_tags": [
+   "contemporary",
+   "modern"
+  ],
+  "color": "Multicolor",
+  "material": "Red Clay",
+  "dimensions_cm": {
+   "w": 60.0,
+   "d": 60.0,
+   "h": 0.8
+  },
+  "dimensions_source": "feature table (validated)",
+  "brand": "SERAMIKSAN",
+  "country_of_manufacture": "Turkey",
+  "price": 33.5,
+  "currency": "GEL",
+  "url": "https://gorgia.ge/ka/remonti/keramikuli-filebi/iatakis-fila/კერამოგრანიტი-mineral-colormix-6060/",
+  "image_url": "https://gorgia.ge/images/thumbnails/176/176/detailed/62/BM-00094520-_1_.jpg",
+  "source": "scraped",
+  "derived_fields": [
+   "style_tags"
+  ]
+ },
+ {
+  "id": "GRG-018",
+  "supplier": "Gorgia",
+  "name": "Porcelain Tile FAROE - R MATT 60*120 VIVES",
+  "name_original": "კერამოგრანიტი FAROE - R MATT 60*120 \"VIVES\"",
+  "category": "flooring",
+  "subcategory": "porcelain_tile",
+  "style_tags": [
+   "contemporary",
+   "modern"
+  ],
+  "color": "Green",
+  "material": null,
+  "dimensions_cm": {
+   "w": 120.0,
+   "d": 60.0,
+   "h": 1.1
+  },
+  "dimensions_source": "feature table (validated)",
+  "brand": "VIVES",
+  "country_of_manufacture": "Spain",
+  "price": 89.9,
+  "currency": "GEL",
+  "url": "https://gorgia.ge/ka/remonti/keramikuli-filebi/keramogranitis-fila/კერამოგრანიტი-faroe-r-matt-60120-vives/",
+  "image_url": "https://gorgia.ge/images/thumbnails/176/176/detailed/86/00240822.png",
+  "source": "scraped",
+  "derived_fields": [
+   "style_tags"
+  ]
+ },
+ {
+  "id": "GRG-019",
+  "supplier": "Gorgia",
+  "name": "MDF PVC Door 215-70 (Art. ST5CH-GRAY POLYPROPYLENE-ZP1960)",
+  "name_original": "კარი მდფ PVC 215-70 (Art. ST5CH-GRAY POLYPROPYLENE-ZP1960)",
+  "category": "door",
+  "subcategory": "door",
+  "style_tags": [
+   "contemporary",
+   "modern"
+  ],
+  "color": null,
+  "material": "MDF",
+  "dimensions_cm": {
+   "w": 70.0,
+   "d": 4.0,
+   "h": 215.0
+  },
+  "dimensions_source": "feature table (validated, door axes remapped)",
+  "brand": "UNIDOORS",
+  "country_of_manufacture": "BELARUS",
+  "price": 437.0,
+  "currency": "GEL",
+  "url": "https://gorgia.ge/ka/remonti/kari/mdf-kari/კარი-მდფ-pvc-215-70-art-st5ch-gray-polypropylene-zp1960/",
+  "image_url": "https://gorgia.ge/images/thumbnails/176/176/detailed/49/BM-00169456_-_door.jpg",
+  "source": "scraped",
+  "derived_fields": [
+   "style_tags"
+  ]
+ },
+ {
+  "id": "GRG-020",
+  "supplier": "Gorgia",
+  "name": "Interior water emulsion paint Plus 7.5L white",
+  "name_original": "ინტერიერის წყალემულსია Plus 7.5ლტ თეთრი",
+  "category": "wall_finish",
+  "subcategory": "wall_paint",
+  "style_tags": [
+   "modern",
+   "minimalist",
+   "scandinavian"
+  ],
+  "color": "white",
+  "material": "water-based emulsion",
+  "dimensions_cm": {
+   "w": null,
+   "d": null,
+   "h": null
+  },
+  "dimensions_source": null,
+  "price": 103.0,
+  "currency": "GEL",
+  "url": "https://gorgia.ge/ka/remonti/laq-sagebavebi/sagebavi/kedlis-da-cheris-sagebavi/interieris-wyalemulsia-plus-7.5lt-tetri/",
+  "image_url": null,
+  "source": "scraped",
+  "derived_fields": [
+   "style_tags"
+  ],
+  "coverage_note": "7.5 L base; tint with a pigment below"
+ },
+ {
+  "id": "GRG-021",
+  "supplier": "Gorgia",
+  "name": "Kolorex tinting pigment #41 100ml (green)",
+  "name_original": "კოლორექსი  # 41 100მლ მწვანე",
+  "category": "wall_finish",
+  "subcategory": "paint_pigment",
+  "style_tags": [
+   "modern",
+   "contemporary"
+  ],
+  "color": "green",
+  "material": "pigment concentrate",
+  "dimensions_cm": {
+   "w": null,
+   "d": null,
+   "h": null
+  },
+  "dimensions_source": null,
+  "price": 4.75,
+  "currency": "GEL",
+  "url": "https://gorgia.ge/ka/remonti/laq-sagebavebi/sagebavi/sagebavis-pigmenti/koloreqsi-41-100ml-mwvane/",
+  "image_url": null,
+  "source": "scraped",
+  "derived_fields": [
+   "style_tags"
+  ],
+  "coverage_note": "tints white base emulsion"
+ },
+ {
+  "id": "GRG-022",
+  "supplier": "Gorgia",
+  "name": "Kolorex tinting pigment #40 100ml (light green)",
+  "name_original": "კოლორექსი  # 40 100მლ ღია მწვანე",
+  "category": "wall_finish",
+  "subcategory": "paint_pigment",
+  "style_tags": [
+   "modern",
+   "contemporary"
+  ],
+  "color": "light green",
+  "material": "pigment concentrate",
+  "dimensions_cm": {
+   "w": null,
+   "d": null,
+   "h": null
+  },
+  "dimensions_source": null,
+  "price": 4.75,
+  "currency": "GEL",
+  "url": "https://gorgia.ge/ka/remonti/laq-sagebavebi/sagebavi/sagebavis-pigmenti/koloreqsi-40-100ml-gia-mwvane/",
+  "image_url": null,
+  "source": "scraped",
+  "derived_fields": [
+   "style_tags"
+  ],
+  "coverage_note": "tints white base emulsion"
+ },
+ {
+  "id": "GRG-023",
+  "supplier": "Gorgia",
+  "name": "Kolorex tinting pigment #11 100ml (lemon)",
+  "name_original": "კოლორექსი  # 11 100მლ ლიმნის ფერი",
+  "category": "wall_finish",
+  "subcategory": "paint_pigment",
+  "style_tags": [
+   "modern",
+   "contemporary"
+  ],
+  "color": "lemon",
+  "material": "pigment concentrate",
+  "dimensions_cm": {
+   "w": null,
+   "d": null,
+   "h": null
+  },
+  "dimensions_source": null,
+  "price": 4.75,
+  "currency": "GEL",
+  "url": "https://gorgia.ge/ka/remonti/laq-sagebavebi/sagebavi/sagebavis-pigmenti/koloreqsi-11-100ml-limnis-feri/",
+  "image_url": null,
+  "source": "scraped",
+  "derived_fields": [
+   "style_tags"
+  ],
+  "coverage_note": "tints white base emulsion"
+ },
+ {
+  "id": "GRG-024",
+  "supplier": "Gorgia",
+  "name": "Kitchen Unit FLY220712 SELENIT 120 cm",
+  "name_original": "სამზარეულო  FLY220712 SELENIT 120 სმ",
+  "category": "kitchen",
+  "subcategory": "kitchen_unit",
+  "style_tags": [
+   "modern",
+   "contemporary"
+  ],
+  "color": null,
+  "material": null,
+  "dimensions_cm": {
+   "w": 120.0,
+   "d": 60.0,
+   "h": 90.0
+  },
+  "dimensions_source": "feature table (validated)",
+  "brand": "fly",
+  "country_of_manufacture": "Turkey",
+  "price": 900.0,
+  "currency": "GEL",
+  "url": "https://gorgia.ge/ka/aveji/samzareulos-aveji/samzareulos-garnituri/სამზარეულო-fly220712-selenit-120-სმ/",
+  "image_url": "https://gorgia.ge/images/thumbnails/176/176/detailed/83/BM-00239205.jpg",
+  "source": "scraped",
+  "derived_fields": [
+   "style_tags"
+  ]
+ },
+ {
+  "id": "GRG-025",
+  "supplier": "Gorgia",
+  "name": "Kitchen Unit FLY220714 ULUDAG OAK 120 cm",
+  "name_original": "სამზარეულო  FLY220714 ULUDAG OAK 120სმ",
+  "category": "kitchen",
+  "subcategory": "kitchen_unit",
+  "style_tags": [
+   "modern",
+   "scandinavian"
+  ],
+  "color": null,
+  "material": "oak",
+  "dimensions_cm": {
+   "w": 120.0,
+   "d": 60.0,
+   "h": 90.0
+  },
+  "dimensions_source": "feature table (validated)",
+  "brand": "fly",
+  "country_of_manufacture": "Turkey",
+  "price": 900.0,
+  "currency": "GEL",
+  "url": "https://gorgia.ge/ka/aveji/samzareulos-aveji/samzareulos-garnituri/სამზარეულო-fly220714-uludag-oak-120სმ/",
+  "image_url": "https://gorgia.ge/images/thumbnails/176/176/detailed/83/BM-00239215.jpg",
+  "source": "scraped",
+  "derived_fields": [
+   "style_tags"
+  ]
+ },
+ {
+  "id": "GRG-026",
+  "supplier": "Gorgia",
+  "name": "Kitchen Sink with Board 7848 780x480x160x0.7mm AS196",
+  "name_original": "სამზარეულოს ნიჟარა დაფით 7848  780*480*160*0.7მმ  AS196",
+  "category": "kitchen",
+  "subcategory": "kitchen_sink",
+  "style_tags": [
+   "contemporary"
+  ],
+  "color": null,
+  "material": null,
+  "dimensions_cm": {
+   "w": 78.0,
+   "d": 48.0,
+   "h": 16.0
+  },
+  "dimensions_source": "feature table (validated)",
+  "brand": null,
+  "country_of_manufacture": "Turkey",
+  "price": 71.0,
+  "currency": "GEL",
+  "url": "https://gorgia.ge/ka/aveji/samzareulos-aveji/samzareulos-nijara/სამზარეულოს-ნიჟარა-დაფით-7848-7804801600-7მმ-as196/",
+  "image_url": "https://gorgia.ge/images/thumbnails/176/176/detailed/53/BM-00149906_-_Kitchen_sink.jpg",
+  "source": "scraped",
+  "derived_fields": [
+   "style_tags"
+  ]
+ }
+]

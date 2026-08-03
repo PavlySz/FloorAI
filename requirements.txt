@@ -1,0 +1,9 @@
+fastapi>=0.110
+uvicorn[standard]>=0.27
+python-multipart>=0.0.9
+requests>=2.31
+pymupdf>=1.24
+pillow>=10.0
+
+# catalog import scripts only (scripts/)
+beautifulsoup4>=4.12
