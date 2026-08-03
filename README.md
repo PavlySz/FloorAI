@@ -5,6 +5,10 @@ using only products from real supplier catalogs, and renders it photorealistical
 from several camera positions. Returns the exact products, quantities and cost
 behind every render.
 
+**[See a committed example run](docs/example-run/)**: four renders of the 25.2 m²
+open-plan room, the scene spec behind them, the compiled prompt, and the product
+list totalling 23,023 GEL. No API keys needed to look at it.
+
 ---
 
 ## Architecture
@@ -181,8 +185,20 @@ registry to update and no code to change. Importers for both suppliers are in
 | `GET /api/catalog/search` | filter by category, subcategory, style, colour, material, supplier, price, width |
 
 Interactive docs at `/docs`. The web interface is one static page: plain
-HTML/CSS/JS, no framework, no build step. It covers analyse and generate;
-regeneration is API only, so exercise it from `/docs` or curl.
+HTML/CSS/JS, no framework, no build step, and it covers all four operations
+including regeneration.
+
+`api_client.py` exercises the API end to end and writes every response and image
+to `api_outputs/`:
+
+```bash
+python api_client.py                        # localhost
+python api_client.py http://<host>:8000     # a deployment
+```
+
+Five requests: options, catalog search, analyse, generate, and a regenerate that
+checks the scene is preserved. About a minute on the fast model. A committed run
+is in [`api_outputs/`](api_outputs/).
 
 Measured end to end: one `/api/generate` on the 25.2 m² open-plan room, Japandi
 and earth palette, 4 viewpoints × 2 variations (8 images) on Nano Banana Pro took
